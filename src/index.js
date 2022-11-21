@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './Index.css';
 
 export default function Counter() {
     const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div className='mainBlock'>
         <h1>{count}</h1>
         <button onClick={() => setCount(count + 1)}>Increment</button>
         <button onClick={() => setCount(count - 1)}>Decrement</button>
